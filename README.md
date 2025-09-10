@@ -6,13 +6,13 @@ Once containerization is confirmed, HoleInTheBox attempts to break out of the co
 
 ## Features
 
-External detection of containerized environments
+- External detection of containerized environments
 
-Exploits public-facing vulnerable services to gain a foothold
+- Exploits public-facing vulnerable services to gain a foothold
 
-Scans for misconfigurations, weak permissions, and escape vectors
+- Scans for misconfigurations, weak permissions, and escape vectors
 
-Attempts container breakout using automated techniques
+- Attempts container breakout using automated techniques
 
 ## Disclaimer
 
