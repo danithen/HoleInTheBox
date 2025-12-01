@@ -1,4 +1,4 @@
-# Container Detection CLI with POC Exploits
+# Hole in The Box: Container Detection and Escape Tool
 
 A comprehensive educational tool for detecting container environments and demonstrating proof-of-concept exploits for container escape vulnerabilities. Supports both local and remote scanning via SSH.
 
