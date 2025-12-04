@@ -42,14 +42,14 @@ A comprehensive educational tool for detecting container environments and demons
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/container-detection-cli.git
-cd container-detection-cli
+git clone https://github.com/danithen/HoleInTheBox.git
+cd HoleInTheBox
 
 # Make executable
-chmod +x container_detection_remote.py
+chmod +x holeinthebox.py
 
 # Run
-./container_detection_remote.py --local
+./holeinthebox.py --local
 ```
 
 ## Usage
@@ -58,57 +58,57 @@ chmod +x container_detection_remote.py
 
 ```bash
 # Basic scan
-./container_detection_remote.py --local
+./holeinthebox.py--local
 
 # Verbose output with debug info
-./container_detection_remote.py --local -v
+./holeinthebox.py --local -v
 
 # Export results to JSON
-./container_detection_remote.py --local --output report.json
+./holeinthebox.py --local --output report.json
 
 # Disable colored output
-./container_detection_remote.py --local --no-color
+./holeinthebox.py --local --no-color
 ```
 
 ### Remote Scanning via SSH
 
 ```bash
 # Scan with default root user
-./container_detection_remote.py --remote 192.168.1.100
+./holeinthebox.py --remote 192.168.1.100
 
 # Custom SSH user and port
-./container_detection_remote.py --remote example.com --user ubuntu --port 2222
+./holeinthebox.py --remote example.com --user ubuntu --port 2222
 
 # Using SSH key authentication
-./container_detection_remote.py --remote 192.168.1.100 --user ec2-user --key ~/.ssh/id_rsa
+./holeinthebox.py --remote 192.168.1.100 --user ec2-user --key ~/.ssh/id_rsa
 
 # Verbose remote scan
-./container_detection_remote.py --remote 192.168.1.100 --user root -v
+./holeinthebox.py --remote 192.168.1.100 --user root -v
 
 # Export remote scan
-./container_detection_remote.py --remote 192.168.1.100 --output remote_scan.json
+./holeinthebox.py --remote 192.168.1.100 --output remote_scan.json
 ```
 
 ### Running Exploits
 
 ```bash
 # Run all available POC exploits locally
-./container_detection_remote.py --local --all-exploits
+./holeinthebox.py --local --all-exploits
 
 # Run specific exploit
-./container_detection_remote.py --local --exploit docker_socket_escape
+./holeinthebox.py --local --exploit docker_socket_escape
 
 # Run exploits on remote system
-./container_detection_remote.py --remote 192.168.1.100 --user root --all-exploits
+./holeinthebox.py --remote 192.168.1.100 --user root --all-exploits
 
 # Run specific remote exploit
-./container_detection_remote.py --remote 192.168.1.100 --exploit privileged_container_escape
+./holeinthebox.py --remote 192.168.1.100 --exploit privileged_container_escape
 ```
 
 ### Help
 
 ```bash
-./container_detection_remote.py --help
+./holeinthebox.py --help
 ```
 
 ## Output Examples
@@ -256,7 +256,7 @@ Checks for access to privileged devices:
 ## Command Line Options
 
 ```
-usage: container_detection_remote.py [-h] [--local] [--remote HOST] 
+usage: holeinthebox.py [-h] [--local] [--remote HOST] 
                                       [-u USER] [-p PORT] [-k FILE] 
                                       [--exploit NAME] [--all-exploits] 
                                       [-v] [--output FILE] [--no-color]
